@@ -31,9 +31,7 @@ def predict(data):
     label = np.where(classes[0] > 0.5, 1,0)
     if label == 0:
         conf = round(float(1.0 - classes[0])*100, 2)
-        return {"file" : "Fresh Fruit",
-                "result" : f"({conf}%)"}    
+        return f"Fresh Fruit ({conf}%)"     
     else:
         conf = round(float(classes[0])*100, 2)
-        return {"file" : "Rotten Fruit",
-                "result" : f"({conf}%)"} 
+        return f"Rotten Fruit ({conf}%)"  
