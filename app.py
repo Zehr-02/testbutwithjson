@@ -16,7 +16,7 @@ def predict_images():
     if data == None:
         return 'Got Nothing'
     else:
-        prediction = predict.predict(data)
+        prediction = {"result" : predict.predict(data)}
 
     return json.dumps(str(prediction))
 
