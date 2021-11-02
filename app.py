@@ -18,7 +18,7 @@ def predict_images():
     else:
         prediction = {"result" : predict.predict(data)}
 
-    return json.dumps(str(prediction))
+    return json.dumps(prediction)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
