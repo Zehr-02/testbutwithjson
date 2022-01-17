@@ -34,4 +34,4 @@ def predict(data):
         return f"Fresh Fruit ({conf}%)"     
     else:
         conf = round(float(classes[0])*100, 2)
-        return f"Rotten Fruit ({conf}%)"  
+        return f"Stale Fruit ({conf}%)"  
